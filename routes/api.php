@@ -19,7 +19,6 @@ Route::post('/players-create', 'PlayerController@create');
 Route::put('/players-update/{id}', 'PlayerController@update');
 Route::delete('/players-destroy/{id}', 'PlayerController@destroy');
 Route::get('/player/{id}', 'PlayerController@show');
-Route::get('/players-verify', 'PlayerController@verifyTeam');
 Route::get('/players', 'PlayerController@index');
 Route::get('/orderned', 'PlayerController@ordernedTeams');
 /* Team Routers */
