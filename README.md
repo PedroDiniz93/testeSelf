@@ -10,22 +10,17 @@
 ## Sobre a API
 A API trata-se de criação de jogadores para a composição de 2 times que é balanceado automaticamente.
 
-### routers
+## routers
 /* Player Routers */
-Cria o player
+### Cria o player
 Route::post('/players-create', 'PlayerController@create');
-
-Faz uma edição no do player com o parametro Id
+### Faz uma edição no do player com o parametro Id
 Route::put('/players-update/{id}', 'PlayerController@update');
-
-Deleta o player pelo Id
+### Deleta o player pelo Id
 Route::delete('/players-destroy/{id}', 'PlayerController@destroy');
-
-Busca de um player pelo Id
+### Busca de um player pelo Id
 Route::get('/player/{id}', 'PlayerController@show');
-
-Listagem de todos os players
+### Listagem de todos os players
 Route::get('/players', 'PlayerController@index');
-
-Endpoint para ordenação dos players
+### Endpoint para ordenação dos players
 Route::get('/orderned', 'PlayerController@ordernedTeams');
